@@ -144,6 +144,9 @@ function clearArray(arr) {
 }
 
 function calculateBestTime(currentBest, arr) {
+  if (arr.length === 0) {
+    return currentBest;
+  }
   if (currentBest <= minScore(arr)) {
     return currentBest;
   } else {
