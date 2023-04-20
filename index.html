@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link hr <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Sedgwick+Ave+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <script defer src="js/script.js"></script>
+
+    <title>Refleksomierz</title>
+  </head>
+  <body>
+    <h1 class="title">REFLEKSOMIERZ</h1>
+    <div class="container placehoderarea">
+      <div id="clickarea" class="click-area ca-grey">
+        <p class="areaText">
+          Klikaj w ten obszar jak najszbyciej, gdy zmieni się kolor!
+        </p>
+      </div>
+    </div>
+    <div id="triesSelector" class="container">
+      <p>Wybierz liczbę prób:</p>
+      <input
+        class="triesValue"
+        type="number"
+        pattern="\d*"
+        inputmode="numeric"
+        id="numberOfGames"
+        min="1"
+        max="100"
+        value="5"
+      />
+    </div>
+    <div class="container">
+      <button type="button" id="play" class="btn start-stop bold green">
+        START
+      </button>
+      <button
+        type="button"
+        id="play1"
+        class="btn start-stop bold red invisible"
+      >
+        STOP
+      </button>
+    </div>
+    <div id="clicks" class="container hidden">
+      <p>Liczba kliknięć: <span id="clicksGame">-</span></p>
+    </div>
+    <div id="statistics" class="container hidden">
+      <p>Najkrótszy czas: <span id="shortest-time" class="bold">-</span> ms</p>
+      <p>Średni czas: <span id="average-time" class="bold">-</span> ms</p>
+      <p>Najdłuższy czas: <span id="longest-time" class="bold">-</span> ms</p>
+    </div>
+    <div id="best" class="container hidden">
+      <p>
+        Najlepszy czas tej sesji:
+        <span id="shortest-time-session" class="bold">-</span> ms
+      </p>
+    </div>
+  </body>
+</html>

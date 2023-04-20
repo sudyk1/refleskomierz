@@ -1,0 +1,103 @@
+/* ##### BODY ##### */
+
+body {
+  background: radial-gradient(circle, #868e96 0%, #343a40 100%);
+}
+
+.title {
+  text-align: center;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 6.4rem;
+  color: #8eda23;
+  margin-top: 2.4rem;
+  text-transform: uppercase;
+}
+
+.container {
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center;
+  /* border: 2px black solid; */
+  gap: 3.2rem;
+}
+
+.placehoderarea {
+  height: 36rem;
+  /* content: ""; */
+}
+
+.click-area {
+  width: 62rem;
+  height: 36rem;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.areaText {
+  font-size: 5.2rem;
+}
+
+.ca-green {
+  background: linear-gradient(45deg, #a9e34b 0%, #74b816 40%, #a9e34b 100%);
+}
+
+.ca-grey {
+  background: linear-gradient(300deg, #9b9b9b 0%, #696969 40%, #707070 100%);
+}
+
+.btn,
+p {
+  font-family: "Mulish", sans-serif;
+}
+
+.btn {
+  font-size: 3.2rem;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.green {
+  background: linear-gradient(45deg, #a9e34b 0%, #74b816 40%, #a9e34b 100%);
+  color: #253d03;
+}
+
+.red {
+  background: linear-gradient(45deg, #f03e3e 0%, #c92a2a 40%, #f03e3e 100%);
+  color: #610202;
+}
+
+p {
+  font-size: 2.4rem;
+  padding: 1.2rem 0 1.2rem 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.triesValue {
+  font-size: 3.2rem;
+  width: 20%;
+  text-align: center;
+  background-color: #9b9b9b;
+  border: none;
+  border-radius: 1rem;
+}
+
+@media (max-width: 59em) {
+  #statistics {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
