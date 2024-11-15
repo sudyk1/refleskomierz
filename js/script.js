@@ -36,8 +36,7 @@ stop.addEventListener("click", () => {
 });
 
 function randomTime(min, max) {
-  const msTillChange = Math.floor(Math.random() * (max - min)) + min;
-  return msTillChange;
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
 function start_game() {
@@ -118,7 +117,7 @@ function averageScore(arr) {
 }
 
 function minScore(arr) {
-  var min = arr[0];
+  let min = arr[0];
   for (let index = 0; index < arr.length; index++) {
     if (arr[index] <= min) {
       min = arr[index];
@@ -128,7 +127,7 @@ function minScore(arr) {
 }
 
 function maxScore(arr) {
-  var max = arr[0];
+  let max = arr[0];
   for (let index = 0; index < arr.length; index++) {
     if (arr[index] >= max) {
       max = arr[index];
